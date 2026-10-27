@@ -17,35 +17,13 @@
   .hook{text-align:center;padding:30px 6px 14px}
   .hook h1{font-size:30px;line-height:1.15;font-weight:800;letter-spacing:-.5px}
   .hook h1 .hl{color:var(--gold)}
-  .hook p{margin-top:12px;font-size:17px;color:var(--muted)}
   .vsl{margin:20px auto 6px;max-width:640px}
   .vsl .frame{position:relative;width:100%;aspect-ratio:16/9;background:#10201b;border-radius:16px;overflow:hidden;display:flex;align-items:center;justify-content:center;border:1px solid var(--line)}
   .vsl .frame .ph{color:#cfe0d6;text-align:center;font-size:14px;padding:20px}
   .vsl .frame .play{width:76px;height:76px;border-radius:50%;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
   .vsl .frame .play:after{content:"";border-left:22px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px}
   .note{font-size:13px;color:var(--muted);text-align:center;margin-top:8px}
-  .cta{display:block;width:100%;text-align:center;background:var(--green);color:#fff;font-size:20px;font-weight:800;padding:20px 18px;border-radius:14px;text-decoration:none;box-shadow:0 8px 22px rgba(47,111,87,.28);margin-top:18px;transition:transform .08s,background .2s}
-  .cta:hover{background:var(--green-d);transform:translateY(-1px)}
-  .cta small{display:block;font-weight:600;font-size:13px;opacity:.9;margin-top:4px}
-  .pay{text-align:center;font-size:13px;color:var(--muted);margin-top:10px}
-  .price{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 20px;margin:26px 0;text-align:center}
-  .price .stack{font-size:14px;color:var(--muted);text-align:left;margin:0 auto 14px;max-width:420px}
-  .price .stack div{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px dashed var(--line)}
-  .price .anchor{font-size:15px;color:var(--muted);text-decoration:line-through}
-  .price .big{font-size:40px;font-weight:800;color:var(--green);margin:6px 0}
-  .price .big span{font-size:18px;color:var(--muted);font-weight:600}
-  .price .credito{font-size:14px;color:var(--gold);font-weight:700;margin-top:4px}
-  .vip{background:#efe7d6;border:1px solid #e4d4ad;border-radius:16px;padding:20px;margin:22px 0;text-align:center}
-  .vip h3{font-size:19px;color:var(--green-d)}
-  .vip p{font-size:15px;color:var(--ink);margin-top:8px}
-  .vip .reg{font-size:12px;color:var(--muted);margin-top:8px}
-  .guar{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:22px 0}
-  .guar .seal{font-size:34px;line-height:1}
-  .guar p{font-size:14px;color:var(--muted)}
-  .guar b{color:var(--ink)}
-  .decline{display:block;text-align:center;color:var(--muted);font-size:14px;text-decoration:underline;margin:18px 0 0}
-  h2.sec{text-align:center;font-size:22px;margin:30px 0 4px}
-  @media(max-width:520px){.hook h1{font-size:25px}.price .big{font-size:34px}}
+  @media(max-width:520px){.hook h1{font-size:25px}}
 </style>
 </head>
 <body>
@@ -54,53 +32,16 @@
 
     <div class="hook">
       <h1>VOCÊ PODE TER O <span class="hl">BARALHO IMPRESSO</span> AINDA ESSA SEMANA 📦</h1>
-      <p>Assista ao vídeo até o fim que a Dra. Rô te explica como entrar na Lista VIP do sorteio — e o que mais tem pra você nesta página.</p>
     </div>
 
     <!-- ======= VSL UPSELL ======= -->
     <div class="vsl">
       <div class="frame" id="vsl-upsell">
-        <!-- COLE AQUI O EMBED DO PLAYER (VTurb/HeyGen) DO UPSELL -->
+        <!-- COLE AQUI O EMBED DO PLAYER (VTurb) DO UPSELL. O botão de compra e o de recusa são liberados no pitch pelo próprio VTurb. -->
         <div class="ph"><div class="play"></div>VSL do Upsell<br>(cole o embed do player aqui)</div>
       </div>
       <p class="note">▶ Aumente o som. O vídeo começa automaticamente.</p>
     </div>
-
-    <!-- ======= CTA (revelar no pitch via outsideCTA do player, se quiser) ======= -->
-    <a class="cta" id="btn-comprar" href="COLE_AQUI_LINK_ONECLICK_LASTLINK_UP1">
-      QUERO A MASTERCLASS + CONCORRER AO BARALHO IMPRESSO
-      <small>Acesso imediato • 1 clique no cartão • Pix também</small>
-    </a>
-    <p class="pay">💳 Cartão: 1 clique e já adiciona ao seu pedido • 📲 Pix: confirma os dados e libera na hora</p>
-
-    <div class="price">
-      <div class="stack">
-        <div><span>Masterclass (6 módulos)</span><span>R$497</span></div>
-        <div><span>Certificado de conclusão</span><span>R$197</span></div>
-        <div><span>1 ano de encontros ao vivo</span><span>R$497</span></div>
-        <div><span>Treinamento Agenda Cheia</span><span>R$197</span></div>
-        <div><span>Comunidade + biblioteca</span><span>R$97</span></div>
-      </div>
-      <div class="anchor">Tudo junto: R$1.485</div>
-      <div class="big">R$197<span> à vista</span></div>
-      <div class="credito">Já com seu crédito de cliente de R$197 aplicado (R$394 − R$197)</div>
-      <div class="note" style="margin-top:6px">ou 10x de R$24,28 no cartão</div>
-    </div>
-
-    <div class="vip">
-      <h3>🎁 Lista VIP — Baralho do Nervo Vago impresso</h3>
-      <p>Ao garantir sua vaga hoje, você entra na lista que concorre ao baralho <b>físico, enviado na sua casa</b>. Sorteio <b>na próxima semana</b>.</p>
-      <p class="reg"><a href="../regulamento/" style="color:var(--muted)">Ver regulamento do sorteio</a></p>
-    </div>
-
-    <div class="guar">
-      <div class="seal">🛡️</div>
-      <p><b>Garantia de 30 dias.</b> Entra, assiste, aplica numa sessão de verdade. Se não for pra você, devolvo os R$197 — sem formulário. E o seu Kit com as +120 atividades fica com você de qualquer jeito.</p>
-    </div>
-
-    <a class="cta" href="COLE_AQUI_LINK_ONECLICK_LASTLINK_UP1">GARANTIR MINHA VAGA AGORA</a>
-
-    <a class="decline" href="../dw1/">Não, obrigada — quero seguir sem a masterclass</a>
 
   </div>
 </body>
